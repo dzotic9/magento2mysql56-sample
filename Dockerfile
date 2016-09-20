@@ -1,5 +1,6 @@
 FROM devbeta/mysql56:5.6.30
 MAINTAINER Jelastic
+ENV MYSQL_ROOT_PASSWORD password
 ADD dumps/magento-sample.sql /tmp/
 RUN /etc/init.d/mysql restart;\
         /usr/bin/mysql -uroot -e "CREATE DATABASE magento;";\

@@ -1,4 +1,4 @@
-FROM devbeta/mysql56:5.6.30
+FROM devbeta/mysql56:5.6.32
 MAINTAINER Jelastic
 ENV MYSQL_ROOT_PASSWORD password
 ADD dumps/magento-sample.sql /tmp/
